@@ -19,5 +19,9 @@ stdAvg=std.mean().round(2)
 gameAvg=game.mean().round(2)
 
 stuGamDiff=std-game
+print(int(stuGamDiff.argmax())+1,stuGamDiff.max())
+print(int(stuGamDiff.argmin())+1,stuGamDiff.min())
 
+maxPerDay=df.idxmax(axis=1)
+print(maxPerDay)
 
